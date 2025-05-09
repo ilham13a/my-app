@@ -10,59 +10,144 @@ import Quiz from '../components/modules/course/Quiz';
 const courseData = {
   content: [
     // Materi
+    // Topik 1: Pengenalan JSX
     {
       type: 'materi',
       ilustration: 'https://reactjs.org/logo-og.png',
       value: [
-        { id: 1, description: 'JSX adalah sintaks khusus...', bold: true },
-        { id: 2, description: 'Keuntungan utama menggunakan JSX...' },
-        { id: 3, description: 'Sintaks dasar JSX sangat mirip dengan HTML...' },
-        { id: 4, description: 'JSX memungkinkan kita untuk memasukkan ekspresi...' },
-        { id: 5, description: 'JSX digunakan untuk mendefinisikan komponen...' },
+        {
+          id: 1,
+          description: 'JSX adalah sintaks khusus yang memungkinkan kita menulis HTML di dalam JavaScript, yang digunakan di React. Meskipun terlihat seperti HTML, JSX sebenarnya adalah JavaScript yang diperluas untuk mempermudah pembuatan tampilan aplikasi.',
+          bold: true,
+        },
+        {
+          id: 2,
+          description: 'Keuntungan utama menggunakan JSX adalah kemampuannya untuk membuat kode lebih bersih dan mudah dipahami. JSX memungkinkan pengembang untuk menulis HTML secara langsung dalam JavaScript.',
+        },
+        {
+          id: 3,
+          description: 'Sintaks dasar JSX sangat mirip dengan HTML, namun ada perbedaan penting seperti penggunaan tanda kurung untuk menempatkan ekspresi JavaScript.',
+        },
+        {
+          id: 4,
+          description: 'JSX memungkinkan kita untuk memasukkan ekspresi JavaScript langsung di dalam tag HTML dengan menempatkannya di dalam kurung kurawal {}.',
+        },
+        {
+          id: 5,
+          description: 'JSX digunakan untuk mendefinisikan komponen dan elemen UI, memungkinkan pembuatan tampilan aplikasi secara lebih modular dan deklaratif.',
+        },
       ],
     },
+    // Topik 2: Elemen dan Komponen JSX
     {
       type: 'materi',
       ilustration: 'https://reactjs.org/logo-og.png',
       value: [
-        { id: 1, description: 'Elemen JSX adalah elemen UI...', bold: true },
-        { id: 2, description: 'Komponen JSX memungkinkan kita untuk membangun UI...' },
-        { id: 3, description: 'Props adalah cara untuk mengirim data...' },
-        { id: 4, description: 'State digunakan untuk menyimpan dan mengelola data...' },
-        { id: 5, description: 'Komponen fungsi lebih sederhana dan sering digunakan...' },
+        {
+          id: 1,
+          description: 'Elemen JSX adalah elemen UI yang ditulis dalam sintaks mirip HTML. Setiap elemen JSX pada dasarnya adalah objek JavaScript yang mendeskripsikan bagian dari UI.',
+          bold: true,
+        },
+        {
+          id: 2,
+          description: 'Komponen JSX memungkinkan kita untuk membangun antarmuka pengguna (UI) dalam aplikasi React. Komponen dapat berupa fungsi atau kelas yang merender elemen JSX.',
+        },
+        {
+          id: 3,
+          description: 'Props adalah cara untuk mengirim data dari komponen induk ke komponen anak di JSX, membuat aplikasi lebih fleksibel dan dapat digunakan kembali.',
+        },
+        {
+          id: 4,
+          description: 'State digunakan untuk menyimpan dan mengelola data internal komponen yang dapat berubah seiring waktu, membuat aplikasi lebih interaktif.',
+        },
+        {
+          id: 5,
+          description: 'Komponen fungsi lebih sederhana dan lebih sering digunakan, sementara komponen kelas memberikan lebih banyak fitur seperti metode lifecycle.',
+        },
       ],
     },
+    // Topik 3: Manipulasi dan Event dalam JSX
     {
       type: 'materi',
       ilustration: 'https://reactjs.org/logo-og.png',
       value: [
-        { id: 1, description: 'Menghubungkan event dengan JSX sangat mudah...', bold: true },
-        { id: 2, description: 'Event handling di JSX memungkinkan kita untuk menangani interaksi...' },
-        { id: 3, description: 'Binding event dengan state memungkinkan kita untuk menangani perubahan...' },
-        { id: 4, description: 'Formulir di JSX melibatkan input pengguna...' },
-        { id: 5, description: 'Validasi formulir dengan JSX sangat penting...' },
+        {
+          id: 1,
+          description: 'Menghubungkan event dengan JSX sangat mudah dengan menambahkan properti event handler, seperti onClick, onChange, atau onSubmit.',
+          bold: true,
+        },
+        {
+          id: 2,
+          description: 'Event handling di JSX memungkinkan kita untuk menangani interaksi pengguna dalam aplikasi, seperti klik tombol atau perubahan input.',
+        },
+        {
+          id: 3,
+          description: 'Binding event dengan state memungkinkan kita untuk menangani perubahan data dalam aplikasi, mengubah state dan merender ulang komponen.',
+        },
+        {
+          id: 4,
+          description: 'Formulir di JSX melibatkan input pengguna yang perlu diproses, menggunakan event handler seperti onSubmit untuk menangani pengiriman form.',
+        },
+        {
+          id: 5,
+          description: 'Validasi formulir dengan JSX sangat penting untuk memastikan data yang dimasukkan oleh pengguna valid sebelum diproses lebih lanjut.',
+        },
       ],
     },
+    // Topik 4: Rendering dan Kondisional JSX
     {
       type: 'materi',
       ilustration: 'https://reactjs.org/logo-og.png',
       value: [
-        { id: 1, description: 'Conditional rendering di JSX memungkinkan kita...', bold: true },
-        { id: 2, description: 'Menggunakan .map() untuk merender list...' },
-        { id: 3, description: 'JSX memungkinkan kita untuk menggunakan kondisi if/else...' },
-        { id: 4, description: 'Operator ternary memungkinkan kita untuk merender...' },
-        { id: 5, description: 'Rendering berdasarkan kondisi sangat berguna...' },
+        {
+          id: 1,
+          description: 'Conditional rendering di JSX memungkinkan kita untuk merender elemen tertentu berdasarkan kondisi, menggunakan pernyataan kondisional seperti if/else atau operator ternary.',
+          bold: true,
+        },
+        {
+          id: 2,
+          description: 'Menggunakan .map() untuk merender list memungkinkan kita untuk merender elemen UI secara dinamis berdasarkan data array.',
+        },
+        {
+          id: 3,
+          description: 'JSX memungkinkan kita untuk menggunakan kondisi if/else dalam render untuk memilih elemen mana yang akan ditampilkan berdasarkan kondisi.',
+        },
+        {
+          id: 4,
+          description: 'Operator ternary memungkinkan kita untuk merender elemen berdasarkan kondisi dalam satu baris kode yang ringkas dan mudah dibaca.',
+        },
+        {
+          id: 5,
+          description: 'Rendering berdasarkan kondisi sangat berguna ketika kita perlu menampilkan elemen yang berbeda dalam situasi yang berbeda, seperti menampilkan pesan kesalahan atau loading spinner.',
+        },
       ],
     },
+    // Topik 5: Integrasi JSX dengan JavaScript Lainnya
     {
       type: 'materi',
       ilustration: 'https://reactjs.org/logo-og.png',
       value: [
-        { id: 1, description: 'JSX dapat digunakan bersama fungsi JavaScript...', bold: true },
-        { id: 2, description: 'Variabel dalam JSX memungkinkan kita untuk memasukkan data dinamis...' },
-        { id: 3, description: 'JSX dapat digunakan dengan perulangan dalam JavaScript...' },
-        { id: 4, description: 'Menyusun JSX dalam array memungkinkan kita menangani elemen dinamis...' },
-        { id: 5, description: 'JSX memungkinkan kita untuk menyusun logika kompleks...' },
+        {
+          id: 1,
+          description: 'JSX dapat digunakan bersama dengan fungsi JavaScript untuk memproses dan menampilkan data. Fungsi ini dapat dipanggil di dalam JSX untuk menghasilkan hasil yang dinamis.',
+          bold: true,
+        },
+        {
+          id: 2,
+          description: 'Variabel dalam JSX memungkinkan kita untuk memasukkan data dinamis ke dalam elemen UI menggunakan {}.',
+        },
+        {
+          id: 3,
+          description: 'JSX dapat digunakan dengan perulangan dalam JavaScript untuk merender elemen secara dinamis, misalnya menggunakan .map() untuk merender array elemen.',
+        },
+        {
+          id: 4,
+          description: 'Menyusun JSX dalam array memungkinkan kita untuk menangani kumpulan elemen dinamis yang bisa di-render dalam sebuah komponen.',
+        },
+        {
+          id: 5,
+          description: 'JSX memungkinkan kita untuk menyusun logika yang lebih kompleks dengan memadukan ekspresi JavaScript, fungsi, dan event handling untuk menghasilkan UI yang responsif.',
+        },
       ],
     },
     // ... (other "materi" content)
